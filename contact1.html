@@ -138,11 +138,10 @@
             backdrop-filter: blur(18px);
             border-radius: 8px;
         }
-
-        #upper-footer {
+        /* #upper-footer {
 
             flex-direction: row;
-        }
+        } */
 
         i:hover {
             color: #e60000;
@@ -153,19 +152,23 @@
             color: var(--muted-text);
             /* font-size: 0.95rem; */
         }
+         p:hover{
+    color: red;
+ }
         body{
             font-family: var(--font-family);
         }
-       
-
-
+        .map{
+            height: 400px;
+            width: 1100px;
+        }
     header {
     background-color: var(--header-bg);
     padding: 20px 0;
     text-align: center;
     position: relative;
     overflow: hidden;}
-    .container {
+    .contact-sec {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -205,7 +208,8 @@ ease-out;
 .info-item:hover{
     background-color: var(--primary-bg);
     transform: translateX(10px) scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 0, 0 ,0.1);
+    box-shadow: 0 5px 15px rgba(247, 2, 2, 0.1);
+    border: 2px solid var(--highlight-bg);
 }
 .info-item {
     margin-bottom: 25px;
@@ -365,6 +369,10 @@ ease-out;
     transition: transform 0.3s 
 ease;
 }
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #28a745;
+}
 </style>
 </head>
 <body>
@@ -436,9 +444,9 @@ ease;
         </div>
     </nav>
     <header>
-        <h1 style="color: var(--white-text);">contact us </h1>
+        <h1 style="color: var(--white-text);">Contact Us </h1>
     </header>
-    <div class="container">
+    <div class="contact-sec">
         <div class="contact-section">
             <div class="contact-info">
                 <h2>Get In Touch</h2>
@@ -508,16 +516,17 @@ ease;
      <div class="map-section">
             <h2>Find Us</h2>
             <div class="map-placeholder">
-                Map Integration Here (Google Maps / Mapbox)
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0171489288123!2d67.07182317479612!3d24.863263877927473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1765434531541!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+    </div>
         <!-- Footer -->
     <footer class="text-center text-lg-start  text-white">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Section: Social media -->om">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             </div>
             <!-- Left -->
 
